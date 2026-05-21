@@ -1,0 +1,168 @@
+/* Reset básico de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff; /* Color naranja de fondo de tu diseño */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal en dos mitades */
+.login-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    height: 100vh;
+    align-items: center;
+    padding: 20px;
+    margin: 0% auto;
+}
+
+
+.brand-logo {
+    font-size: 5rem;
+    font-weight: 900;
+    color: #000000;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 0px #fff; /* Pequeño relieve para imitar el estilo */
+}
+
+
+
+/* Tarjeta Blanca de Login (Estilo Figma) */
+.login-card {
+    background-color: #F9F6F0; /* Blanco hueso/suave */
+    padding: 40px 30px;
+    border-radius: 25px; /* Bordes bien redondeados como tu diseño */
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    border: 1px solid #eaeaea;
+}
+
+.avatar-icon {
+    margin-bottom: 10px;
+}
+
+.login-card h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+/* Columna del Logo (Izquierda) - Ocupa el 50% de la pantalla */
+.logo-section {
+    flex:1;
+    width: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px
+}
+
+/* Control del tamaño y centrado del logotipo */
+.big-logo {
+    width:100%;
+    max-width: 320px;
+    height: auto;
+    object-fit: contain;
+}
+.form-section {
+    flex: 1;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+/* Formulario e inputs */
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #444;
+    font-size: 0.9rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #EAEAEA; /* Fondo grisáceo para los inputs */
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #FFA500;
+}
+
+/* Botón de Login */
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    background-color: #CCCCCC; /* Botón gris de tu plantilla */
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.btn-login:hover {
+    background-color: #b5b5b5;
+}
+
+/* Enlaces inferiores */
+.form-links {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-links a {
+    color: #555;
+    font-size: 0.85rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.form-links a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+/* Responsivo para celulares */
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .brand-logo {
+        font-size: 3.5rem;
+        margin-bottom: 30px;
+    }
+}
